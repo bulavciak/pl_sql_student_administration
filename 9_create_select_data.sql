@@ -20,3 +20,8 @@ END;
 -- select average - Zistenie priemeru
 SELECT get_average(1) AS celkovy_priemer FROM dual;
 SELECT get_average(1, 'Matematika') AS priemer_z_matematiky FROM dual;
+
+-- select all report about student
+BEGIN
+    print_student_report(1);  -- kde 1 je ID študenta
+END;
